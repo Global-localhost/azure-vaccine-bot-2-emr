@@ -1,14 +1,10 @@
-# Project
+# Abstract
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+As the COVID-19 Vaccine rollout increases in volume, providers are preparing for a massive influx of patient registrations. Many of these provider's EMR (Electronic Medical Records) systems are already heavily burdened from daily work and cannot handle a spike in record entries or new patients, which will be the case with vaccine registration. Many of these individuals will not already be patients of that particular Medical Provider and may never visit them again.  
 
-As the maintainer of this project, please make a few updates:
+This is why we're creating an "eventual consistency" model for patient scheduling, record creation and entry. With this design, the Medical Provider can decide at what frequency they can ingest new records from the cloud-scale Vaccine Eligibility Azure Health Bot. Whether they can handle 1 new record per second, or batch loading them between certain hours, this system will use HIPPA and HITRUST certified Azure services to complete the scheduling and become eventually consistent with the EMR by way of Azure API for FHIR, and in-turn respect the rate limiting requirements of the Provider to ensure uptime and functionality for their daily operations.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+<img src="images\vaccine-bot-2-emr.png" width="100%"/>
 
 ## Contributing
 
